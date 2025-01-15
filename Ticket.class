@@ -1,0 +1,29 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+public class Ticket {
+    private static int idCounter = 1;
+    private int id;
+    private String movieName;
+    private String date;
+    private String time;
+    private double price;
+
+    public Ticket(String movieName, String date, String time, double price) {
+        this.id = idCounter++;
+        this.movieName = movieName;
+        this.date = date;
+        this.time = time;
+        this.price = price;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public String toString() {
+        return "Ticket ID: " + this.id + ", Movie: " + this.movieName + ", Date: " + this.date + ", Time: " + this.time + ", Price: $" + this.price;
+    }
+}
