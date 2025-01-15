@@ -1,0 +1,28 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+public class Movie {
+    private String name;
+    private String genre;
+    private int ageRestriction;
+
+    public Movie(String name, String genre, int ageRestriction) {
+        this.name = name;
+        this.genre = genre;
+        this.ageRestriction = ageRestriction;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAgeRestriction() {
+        return this.ageRestriction;
+    }
+
+    public String toString() {
+        return "Movie: " + this.name + ", Genre: " + this.genre + ", Age Restriction: " + this.ageRestriction;
+    }
+}
